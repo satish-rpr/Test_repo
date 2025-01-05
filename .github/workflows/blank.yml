@@ -27,6 +27,6 @@ jobs:
       - name: Get tags and update Readme.md
         run: |
           cd ${{ github.workspace }}
-          git describe
+          echo ${{ github.ref_name }}
           python ./.github/workflows/UpdateReadme.py ${{ github.workspace }}
       
