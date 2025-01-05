@@ -25,5 +25,5 @@ jobs:
 
       # Runs UpdateReadme.py python script
       - name: Get tags and update Readme.md
-        run: python ./github/workflows/UpdateReadme.py
+        run: python ./.github/workflows/UpdateReadme.py
       
