@@ -24,6 +24,6 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs UpdateReadme.py python script
-      - name: Run a one-line script
+      - name: Get tags and update Readme.md
         run: python UpdateReadme.py
       
