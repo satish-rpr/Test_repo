@@ -2,8 +2,8 @@ import os
 import sys
 import subprocess
 
-github_env = os.environ['GITHUB_ENV']
-result = subprocess.run(['la -l'], shell=True, capture_output=True, text=True, cwd=sys.argv[1]).stdout
+repo_workspace = os.environ['GITHUB_WORKSPACE']
+repo_ref = os.environ['GITHUB_REF']
 
-print(result)
-print (f'github env {github_env}')
+print(f"repo_workspace: {repo_workspace}")
+print(f"repo_ref: {repo_ref}")
