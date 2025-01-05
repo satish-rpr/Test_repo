@@ -3,6 +3,6 @@ import sys
 import subprocess
 
 
-result = subprocess.run(['ls -l'], shell=True, capture_output=True, text=True, cwd=sys.argv[1]).stdout
+result = subprocess.run(['git tag'], shell=True, capture_output=True, text=True, cwd=sys.argv[1]).stdout
 
 print(result)
