@@ -25,5 +25,8 @@ jobs:
 
       # Runs UpdateReadme.py python script
       - name: Get tags and update Readme.md
-        run: python ./.github/workflows/UpdateReadme.py ${{ github.workspace }}
+        run: |
+          cd ${{ github.workspace }}
+          git tag
+          python ./.github/workflows/UpdateReadme.py ${{ github.workspace }}
       
